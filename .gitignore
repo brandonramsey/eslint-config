@@ -1,0 +1,21 @@
+node_modules/
+
+# ignore files created by merge conflicts
+*.md.orig
+*.js.orig
+
+# ignore vs code environment configuration files
+.vscode/
+
+# ignore coverage files created by jest tests
+coverage/
+
+# ignore temp files
+temp*.js
+
+# Ignore macOS files
+**/.DS_Store
+
+#Ignore IntelliJ
+.idea/
+.env
