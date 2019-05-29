@@ -1,0 +1,6 @@
+{
+    "extends": "./node.js",
+    "rules": {
+        "no-magic-numbers": 0
+    }
+}
