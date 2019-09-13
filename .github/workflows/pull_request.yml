@@ -1,8 +1,7 @@
 name: Lint/Test/Code Coverage
-description: Check pull request to ensure linting, testing, and code coverage all meet requirements.
 on: pull_request
 jobs:
-  test:
+  lint:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1.0.0
@@ -10,5 +9,11 @@ jobs:
         run:  NODE_ENV=development npm ci
       - name: Run ESLint
         run:  npm run lint
-      - name: Run tests
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1.0.0
+      - name: Install devDependencies
+        run:  NODE_ENV=development npm ci
+      - name: Run test and check coverage
         run:  npm run coverage
