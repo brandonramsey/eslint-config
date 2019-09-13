@@ -1,0 +1,12 @@
+name: eslint-config CI
+on: pull_request
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install devDependencies
+        run:  NODE_ENV=development npm ci
+      - name: Run ESLint
+        run:  npm run lint
+      - name: Run tests
+        run:  npm run coverage
