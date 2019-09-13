@@ -4,6 +4,10 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
+      - name: Check out branch
+        run: |
+          git fetch
+          git checkout $GITHUB_SHA
       - name: Install devDependencies
         run:  NODE_ENV=development npm ci
       - name: Run ESLint
