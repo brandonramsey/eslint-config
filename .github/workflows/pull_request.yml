@@ -1,4 +1,5 @@
-name: eslint-config CI
+name: Lint/Test/Code Coverage
+description: Check pull request to ensure linting, testing, and code coverage all meet requirements.
 on: pull_request
 jobs:
   test:
