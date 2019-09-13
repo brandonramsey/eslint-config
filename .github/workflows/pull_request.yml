@@ -1,10 +1,5 @@
 name: eslint-config CI
 on: pull_request
-inputs:
-    repository:
-        description: Repository name
-    ref:
-        description: Branch/SHA/tag to checkout
 jobs:
   test:
     runs-on: ubuntu-latest
