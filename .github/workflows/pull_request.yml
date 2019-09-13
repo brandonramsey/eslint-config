@@ -1,13 +1,15 @@
 name: eslint-config CI
 on: pull_request
+inputs:
+    repository:
+        description: Repository name
+    ref:
+        description: Branch/SHA/tag to checkout
 jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - name: Check out branch
-        run: |
-          git fetch
-          git checkout $GITHUB_SHA
+      - uses: actions/checkout@v1.0.0
       - name: Install devDependencies
         run:  NODE_ENV=development npm ci
       - name: Run ESLint
