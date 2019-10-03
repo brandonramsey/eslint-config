@@ -29,11 +29,11 @@
         },
         {
             "name": "Michael Wilson",
-            "email": "Michael.Wilson@fishtech.group",
+            "email": "Michael.Wilson@fishtech.group"
         },
         {
             "name": "James Grow",
-            "email": "James.Grow@fishtech.group",
+            "email": "James.Grow@fishtech.group"
         }
     ],
     "peerDependencies": {
