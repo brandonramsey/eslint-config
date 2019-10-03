@@ -1,5 +1,4 @@
 {
-    "name": "@bramsey/eslint-config",
     "name": "@brandonramsey/eslint-config",
     "version": "2.0.0",
     "description": "Sensible eslint config defaults for node, serverless, and react",
@@ -14,10 +13,6 @@
         "build": "exit 0",
         "deploy": "exit 0",
         "checks": "rm -rf node_modules && NODE_ENV=development npm ci && npm run test && npm run coverage && DEPLOY_TARGET=development npm run build"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/FishtechCSOC/eslint-config-fishtech.git"
     },
     "repository": "git://github.com/brandonramsey/eslint-config.git",
     "keywords": [],
