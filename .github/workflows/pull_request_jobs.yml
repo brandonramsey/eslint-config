@@ -1,0 +1,30 @@
+on: pull_request
+name: pull_request_jobs
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1.0.0
+        name: Check out branch
+      - name: Install dependencies
+        run:  NODE_ENV=development npm ci
+      - name: Run tests
+        run:  node -v && npm run test
+  coverage:
+      runs-on: ubuntu-latest
+      steps:
+        - uses: actions/checkout@v1.0.0
+          name: Check out branch
+        - name: Install dependencies
+          run:  NODE_ENV=development npm ci
+        - name: Check coverage
+          run:  npm run coverage
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1.0.0
+        name: Check out branch
+      - name: Install dependencies
+        run:  NODE_ENV=development npm ci
+      - name: Run ESLint
+        run:  npm run lint
