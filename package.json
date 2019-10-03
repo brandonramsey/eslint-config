@@ -1,5 +1,6 @@
 {
     "name": "@bramsey/eslint-config",
+    "name": "@brandonramsey/eslint-config",
     "version": "2.0.0",
     "description": "Sensible eslint config defaults for node, serverless, and react",
     "main": "index.js",
@@ -18,6 +19,7 @@
         "type": "git",
         "url": "git+https://github.com/FishtechCSOC/eslint-config-fishtech.git"
     },
+    "repository": "git://github.com/brandonramsey/eslint-config.git",
     "keywords": [],
     "author": "",
     "license": "ISC",
@@ -72,5 +74,8 @@
             "/node_modules/",
             "/coverage/"
         ]
+    },
+    "publishConfig": {
+        "registry": "https://npm.pkg.github.com"
     }
 }
