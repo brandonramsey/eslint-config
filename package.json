@@ -19,24 +19,21 @@
     "author": "",
     "license": "ISC",
     "bugs": {
-        "url": "https://github.com/FishtechCSOC/eslint-config-fishtech/issues"
+        "url": "https://github.com/brandonramsey/eslint-config/issues"
     },
-    "homepage": "https://github.com/FishtechCSOC/eslint-config-fishtech#readme",
+    "homepage": "https://github.com/brandonramsey/eslint-config#readme",
     "contributors": [
         {
             "name": "Brandon Ramsey",
-            "email": "Brandon.Ramsey@fishtech.group",
-            "url": "https://fishtech.group"
+            "email": "Brandon.Ramsey@gmail.com"
         },
         {
             "name": "Michael Wilson",
-            "email": "Michael.Wilson@fishtech.group",
-            "url": "https://fishtech.group"
+            "email": "Michael.Wilson@fishtech.group"
         },
         {
             "name": "James Grow",
-            "email": "James.Grow@fishtech.group",
-            "url": "https://fishtech.group"
+            "email": "James.Grow@fishtech.group"
         }
     ],
     "peerDependencies": {
