@@ -1,0 +1,70 @@
+MD001: true # heading-increment
+MD002: true # first-heading-h1
+MD003: # heading-style
+  style: setext_with_atx
+MD004: # ul-style
+  style: consistent
+MD005: true # list-indent
+MD006: true # ul-start-left
+MD007: # ul-indent
+  indent: 4
+  start_indented: 0
+MD009: # no-trailing-spaces
+  br_spaces: 2
+MD010: true # no-hard-tabs
+MD011: true # no-reversed-links
+MD012: true # no-multiple-blanks
+MD013: # line-length
+  line_length: 66
+  headings: false
+  code_blocks: false
+  tables: false
+MD014: true # commands-show-output
+MD018: true # no-missing-space-atx
+MD019: true # no-multiple-space-atx
+MD020: true # no-missing-space-closed-atx
+MD021: true # no-multiple-space-closed-atx
+MD022: true # blanks-around-headings
+MD023: true # heading-start-left
+MD024: # no-duplicate-heading
+  siblings_only: true
+  allow_different_nesting: false
+MD025: false # single-title
+MD026: true # no-trailing-punctuation
+MD027: true # no-multiple-space-blockquote
+MD028: true # no-blanks-blockquote
+MD029: # ol-prefix
+  style: one_or_ordered
+MD030: # list-marker-space
+  ul_single: 1
+  ol_single: 1
+  ul_multi: 1
+  ol_multi: 1
+MD031: # blanks-around-fences
+  list_items: true
+MD032: true # blanks-around-lists
+MD033: # no-inline-html
+  allowed_elements: null
+MD034: true # no-bare-urls
+MD035: # hr-style
+  style: consistent
+MD036: # no-emphasis-as-heading
+  punctuation: .;:!?
+MD037: true # no-space-in-emphasis
+MD038: true # no-space-in-code
+MD039: true # no-space-in-links
+MD040: true # fenced-code-language
+MD041: false # first-line-heading
+MD042: true # no-empty-links
+MD043: false # required-headings
+MD044: # proper-names
+  names:
+    - GuardDuty
+  code_blocks: false
+MD045: true # no-alt-text
+MD046: # code-block-style
+  style: fenced
+MD047: true # single-trailing-newline
+MD048: # code-fence-style
+  style: backtick
+
