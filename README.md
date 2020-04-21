@@ -12,13 +12,10 @@ There are multiple configurations in this config:
 This repository's package is stored on GitHub Package Repository. To install,
 take the following steps:
 
-1. In the root of your package (the same directory as `package.json`), add the
-  line `@brandonramsey:registry=https://npm.pkg.github.com`, if it doesn't
-  already exist.
-2. Install via `npm`:
-```
-npm install @brandonramsey/eslint-config
-```
+1. In the root of your package (the same directory as
+    `package.json`), add the line `@brandonramsey:registry=https://npm.pkg.github.com`
+    to your `.npmrc` file. If `.npmrc` does not exist, create it.
+2. Install package: `npm install --save-dev @brandonramsey/eslint-config`
 
 ## Usage
 Use this eslint config by specifying the desired ruleset in the *extends*
