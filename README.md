@@ -1,4 +1,5 @@
-# @bramsey/eslint-config
+@bramsey/eslint-config
+===========================================================================
 
 Sensible eslint config defaults for node, serverless, and react
 
@@ -8,27 +9,30 @@ There are multiple configurations in this config:
 * `react` is meant for client side React/JSX development
 * `lambda` is meant for serverless JavaScript development
 
-## Installation
-This repository's package is stored on GitHub Package Repository. To install,
-take the following steps:
+Installation
 
-1. In the root of your package (the same directory as `package.json`), add the
-  line `@brandonramsey:registry=https://npm.pkg.github.com`, if it doesn't
-  already exist.
-2. Install via `npm`:
-```
-npm install @brandonramsey/eslint-config
-```
+This repository's package is stored on GitHub Package Repository.
+To install, take the following steps:
 
-## Usage
+1. In the root of your package (the same directory as
+    `package.json`), add the line `@brandonramsey:registry=https://npm.pkg.github.com`
+    to your `.npmrc` file. If `.npmrc` does not exist, create it.
+2. Install package: `npm install --save-dev @brandonramsey/eslint-config`
+
+Usage
+---------------------------------------------------------------------------
+
 Use this eslint config by specifying the desired ruleset in the *extends*
 property of your `.eslintrc` (or equivalent) configuration file.
 
-You can choose the `node`, `react`, or `lambda` rule set. If no specific ruleset
-is given, the `node` rule set is used.
+You can choose the `node`, `react`, or `lambda` rule set. If no
+specific ruleset is given, the `node` rule set is used.
 
-## Examples
+Examples
+---------------------------------------------------------------------------
+
 ### .eslintrc Using node Rule Set
+
 ```json
 {
   "extends": "@brandonramsey/eslint-config/node"
@@ -36,6 +40,7 @@ is given, the `node` rule set is used.
 ```
 
 ### .eslintrc.js Using react Rule Set
+
 ```js
 module.exports = {
   extends: '@brandonramsey/eslint-config/react'
@@ -43,11 +48,13 @@ module.exports = {
 ```
 
 ### .eslintrc.yaml Using lambda Rule Set
+
 ```yaml
 extends: @brandonramsey/eslint-config/lambda
 ```
 
 ### .eslintrc Using node Rule Set via Defaults
+
 ```json
 {
   "extends": "@brandonramsey/eslint-config"

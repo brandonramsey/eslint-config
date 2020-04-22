@@ -8,7 +8,7 @@
     },
     "scripts": {
         "lint": "eslint .",
-        "test": "jest",
+        "test": "markdownlint '**/*.md' --config ./.markdownlint.yaml --ignore ./node_modules && eslint ./ && jest",
         "coverage": "jest --coverage",
         "build": "exit 0",
         "deploy": "exit 0",
@@ -48,7 +48,8 @@
         "eslint-plugin-babel": "^5.3.0",
         "eslint-plugin-import": "^2.18.2",
         "eslint-plugin-jsx-a11y": "^6.2.3",
-        "eslint-plugin-react": "^7.14.3"
+        "eslint-plugin-react": "^7.14.3",
+        "markdownlint-cli": "^0.22.0"
     },
     "publishConfig": {
         "registry": "https://npm.pkg.github.com"
