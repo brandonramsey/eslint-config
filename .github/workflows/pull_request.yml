@@ -1,19 +1,25 @@
-name: Lint/Test/Code Coverage
-on: pull_request
+name: Pull Request Updated
+on:
+  pull_request:
+    branches:
+      - main
 jobs:
-  lint:
+  validate:
+    name: Validate
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1.0.0
       - name: Install devDependencies
         run:  NODE_ENV=development npm ci
       - name: Run ESLint
-        run:  npm run lint
-  test:
+        run:  npm run validate:lint
+      - name: Run unit tests
+        run: npm run validate:test
+      - name: Check test coverage
+        run:  npm run validate:coverage
+  build:
+    name: Build
     runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v1.0.0
-      - name: Install devDependencies
-        run:  NODE_ENV=development npm ci
-      - name: Run test and check coverage
-        run:  npm run coverage
+  test:
+    name: Test
+    runs-on: ubuntu-latest

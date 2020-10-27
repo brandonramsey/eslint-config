@@ -7,12 +7,12 @@
         "lib": "lib"
     },
     "scripts": {
-        "lint": "eslint .",
-        "test": "markdownlint '**/*.md' --config ./.markdownlint.yaml --ignore ./node_modules && eslint ./ && jest",
-        "coverage": "jest --coverage",
+        "validate:lint": "eslint .",
+        "validate:test": "markdownlint '**/*.md' --config ./.markdownlint.yaml --ignore ./node_modules && eslint ./ && jest",
+        "validate:coverage": "jest --coverage",
         "build": "exit 0",
-        "deploy": "exit 0",
-        "checks": "rm -rf node_modules && NODE_ENV=development npm ci && npm run test && npm run coverage && DEPLOY_TARGET=development npm run build"
+        "test": "exit 0",
+        "deploy": "exit 0"
     },
     "repository": "git://github.com/brandonramsey/eslint-config.git",
     "keywords": [],
