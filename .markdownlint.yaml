@@ -1,7 +1,9 @@
+ignore:
+  - previous_drafts/**/*
 MD001: true # heading-increment
 MD002: true # first-heading-h1
 MD003: # heading-style
-  style: setext_with_atx
+  style: atx
 MD004: # ul-style
   style: consistent
 MD005: true # list-indent
@@ -44,7 +46,17 @@ MD031: # blanks-around-fences
   list_items: true
 MD032: true # blanks-around-lists
 MD033: # no-inline-html
-  allowed_elements: null
+  allowed_elements:
+    - a
+    - abbr
+    - br
+    - li
+    - ol
+    - table
+    - td
+    - th
+    - tr
+    - ul
 MD034: true # no-bare-urls
 MD035: # hr-style
   style: consistent
