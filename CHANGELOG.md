@@ -1,5 +1,4 @@
-Change Log: @brandonramsey/eslint-config
-==================================================================
+# Change Log: @brandonramsey/eslint-config
 
 ## [1.0.0] - 2019-05-29
 
@@ -21,8 +20,8 @@ The no-void and no-undefined rules were both set to `ERROR`, which
 caused a logical conflict.
 
 Since ES5, undefined has been immutable, so there is no longer a
-reason to use void 0 instead, other than to prevent shadowing of `undefined`
-as an argument name in a function.
+reason to use void 0 instead, other than to prevent shadowing of
+`undefined` as an argument name in a function.
 
 The `no-shadow-restricted-names` rule was already enabled and will
 prevent `undefined` from being used as an argument name in
