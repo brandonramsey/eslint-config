@@ -29,3 +29,9 @@ functions, so this is a non-issue.
 
 *Additionally, no-shadow-restricted-names will prevent `NaN`,
 `Infinity`, `eval`, and `arguments` from being shadowed.*
+
+### Changed
+
+- **Update markdownlint configuration**: Updated configuration settings
+    in `.markdownlint.yaml` and modified markdown files to adhere
+    to new settings.
